@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML media project</title>
+  </head>
+  <body>
+    <header>
+      <center>
+        <h1>HTML Media Project</h1>
+      </center>
+    </header>
+
+    <nav>
+      <a href="#image">Image</a> | <a href="#video-element">Video Element</a> |
+      <a href="#audio-element">Audio Element</a> |
+      <a href="#pic-element">Picture Element</a> |
+      <a href="#iframe-element">iframe Element</a> |
+      <a href="#canvas-element">Canvas Element</a> |
+      <a href="#svg-element">SVG Element</a> |
+      <a href="#map-area-element">Map and Area Elements</a> |
+      <a href="#object-element">Object Element</a> |
+      <a href="#embed-element"> Embed Element</a> |
+      <a href="#fig">Figure and Figcaption</a>
+    </nav>
+
+    <section id="image">
+      <h2>1. Image</h2>
+      <img src="./assets/image-01.jpeg" alt="Random sample image" />
+    </section>
+
+    <section id="video-element">
+      <h2>2. Video Element</h2>
+      <video width="320" height="240" controls>
+        <source src="./assets/video-01.mp4" type="video/mp4" />
+        <track
+          src="./assets/v2Subtitles_en.vtt"
+          kind="subtitles"
+          srclang="en"
+          label="English"
+          default
+        />
+        Video tag not supported!
+      </video>
+    </section>
+
+    <section id="audio-element">
+      <h2>3. Audio Element</h2>
+      <audio controls>
+        <source src="./assets/Audio-01.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="pic-element">
+      <h2>4. Picture Element (Responsive Images)</h2>
+      <picture>
+        <source media="(min-width: 650px)" srcset="./assets/image-03.jpeg" />
+        <source media="(min-width: 465px)" srcset="./assets/image-01.jpeg" />
+        <img
+          src="./assets/image-02.jpeg"
+          alt="Responsive image"
+          style="width: auto"
+        />
+      </picture>
+    </section>
+
+    <section id="iframe-element">
+      <h2>5. iframe Element</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/K4DyBUG242c"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+
+    <section id="canvas-element">
+      <h2>6. Canvas Element</h2>
+      <canvas
+        id="myCanvas"
+        width="200"
+        height="100"
+        style="background-color: palevioletred"
+      >
+        Your browser does not support the canvas element.
+      </canvas>
+    </section>
+
+    <section id="svg-element">
+      <h2>7. SVG Element</h2>
+      <svg width="100" height="100">
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke="black"
+          stroke-width="3"
+          fill="red"
+        />
+      </svg>
+    </section>
+
+    <section id="map-area-element">
+      <h2>8. Map and Area Elements</h2>
+      <img
+        src="./assets/image-02.jpeg"
+        alt="Navigation map"
+        usemap="#workmap"
+      />
+      <map name="workmap">
+        <area
+          shape="rect"
+          coords="34,44,270,350"
+          alt="Computer"
+          href="#computer"
+        />
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="#phone" />
+      </map>
+    </section>
+
+    <section id="object-element">
+      <h2>9. Object Element</h2>
+      <object
+        data="./assets/dummy_pdf.pdf"
+        type="application/pdf"
+        width="500"
+        height="200"
+      >
+        <p>Unable to display PDF file.</p>
+      </object>
+    </section>
+
+    <section id="embed-element">
+      <h2>10. Embed Element</h2>
+      <embed
+        type="text/html"
+        src="https://www.wikipedia.org"
+        width="500"
+        height="200"
+      />
+    </section>
+
+    <section id="fig">
+      <h2>11. Figure and Figcaption</h2>
+      <figure>
+        <img src="./assets/image-03.jpeg" alt="Random image" />
+        <figcaption>Fig.1 - Random image with caption</figcaption>
+      </figure>
+    </section>
+  </body>
+</html>
