@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A comprehensive guide to HTML elements" />
+    <meta name="keywords" content="HTML, elements, tags, web development" />
+    <meta name="author" content="HTML Guide" />
+    <title>Pure HTML Elements Guide</title>
+  </head>
+  <body>
+    <nav>
+      <h2>Navigation</h2>
+      <a href="#text">Text Elements</a> | <a href="#lists">Lists</a> |
+      <a href="#tables">Tables</a> | <a href="#forms">Forms</a> |
+      <a href="#semantic">Semantic Elements</a> |
+      <a href="#media">Media Elements</a>
+    </nav>
+
+    <header>
+      <h1>Pure HTML Elements Guide</h1>
+      <p>
+        <mark
+          >A complete reference of HTML elements without CSS or JavaScript</mark
+        >
+      </p>
+    </header>
+
+    <main>
+      <section id="text">
+        <h2>Text Elements</h2>
+        <article>
+          <h3>Basic Text Formatting</h3>
+          <p>This is a regular paragraph.</p>
+          <p>This text contains <strong>strong importance</strong>.</p>
+          <p>This text is <em>emphasized</em>.</p>
+          <p>This is <b>bold text</b>.</p>
+          <p>This is <i>italic text</i>.</p>
+          <p>This is <u>underlined text</u>.</p>
+          <p>This is <mark>highlighted text</mark>.</p>
+          <p>This is <small>smaller text</small>.</p>
+          <p>
+            This text is <sub>subscript</sub> and this is
+            <sup>superscript</sup>.
+          </p>
+          <p>
+            This shows <del>deleted text</del> and <ins>inserted text</ins>.
+          </p>
+          <p>This is an example of <code>&lt;code&gt;</code> text.</p>
+          <p>This is a <kbd>keyboard input</kbd>.</p>
+          <p>This is <samp>sample output</samp>.</p>
+          <p>This defines the <dfn>HTML</dfn> term.</p>
+          <p>This is an <abbr title="Abbreviation">abbr.</abbr></p>
+          <p>Chemical formula: H<sub>2</sub>O</p>
+          <p>Mathematical expression: E = mc<sup>2</sup></p>
+        </article>
+
+        <article>
+          <h3>Quotes</h3>
+          <blockquote cite="https://example.com">
+            This is a long blockquote. It can contain multiple lines of text and
+            is typically used for longer quotes.
+          </blockquote>
+          <p>Here's a short quote: <q>This is an inline quote</q></p>
+        </article>
+
+        <article>
+          <h3>Preformatted Text</h3>
+          <pre>
+This is preformatted text.
+    It preserves both spaces
+        and line breaks.
+                </pre
+          >
+        </article>
+      </section>
+
+      <section id="lists">
+        <h2>Lists</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+          <li>First item</li>
+          <li>
+            Second item
+            <ul>
+              <li>Nested item 1</li>
+              <li>Nested item 2</li>
+            </ul>
+          </li>
+          <li>Third item</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+          <li>First step</li>
+          <li>
+            Second step
+            <ol type="a">
+              <li>Sub-step a</li>
+              <li>Sub-step b</li>
+            </ol>
+          </li>
+          <li>Third step</li>
+        </ol>
+
+        <h3>Description List</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>
+            HyperText Markup Language - the standard markup language for web
+            pages
+          </dd>
+          <dt>Element</dt>
+          <dd>A component of HTML document structure</dd>
+          <dt>Tag</dt>
+          <dd>Markup syntax used to define elements</dd>
+        </dl>
+      </section>
+
+      <section id="tables">
+        <h2>Tables</h2>
+        <table border="1">
+          <caption>
+            HTML Table Example
+          </caption>
+          <colgroup>
+            <col />
+            <col />
+            <col />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 2</td>
+              <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 2, Cell 1</td>
+              <td colspan="2">Row 2, Cell 2-3 (merged)</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Table Footer</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="forms">
+        <h2>Forms</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <p>
+              <label for="fullname">Full Name:</label><br />
+              <input type="text" id="fullname" name="fullname" required />
+            </p>
+
+            <p>
+              <label for="useremail">Email:</label><br />
+              <input type="email" id="useremail" name="useremail" />
+            </p>
+
+            <p>
+              <label for="userpassword">Password:</label><br />
+              <input type="password" id="userpassword" name="userpassword" />
+            </p>
+
+            <p>
+              <label for="birthdate">Date of Birth:</label><br />
+              <input type="date" id="birthdate" name="birthdate" />
+            </p>
+
+            <p>
+              <label for="userphone">Phone:</label><br />
+              <input type="tel" id="userphone" name="userphone" />
+            </p>
+
+            <p>
+              <label for="usernumber">Favorite Number (1-100):</label><br />
+              <input
+                type="number"
+                id="usernumber"
+                name="usernumber"
+                min="1"
+                max="100"
+              />
+            </p>
+
+            <p>
+              <label for="usercolor">Favorite Color:</label><br />
+              <input type="color" id="usercolor" name="usercolor" />
+            </p>
+
+            <p>
+              <label for="satisfaction">Satisfaction Level:</label><br />
+              <input
+                type="range"
+                id="satisfaction"
+                name="satisfaction"
+                min="0"
+                max="10"
+              />
+            </p>
+
+            <p>
+              <label for="userfile">Upload File:</label><br />
+              <input type="file" id="userfile" name="userfile" />
+            </p>
+
+            <fieldset>
+              <legend>Gender</legend>
+              <p>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+              </p>
+              <p>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+              </p>
+              <p>
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="other">Other</label>
+              </p>
+            </fieldset>
+
+            <p>
+              <label>Interests:</label><br />
+              <input
+                type="checkbox"
+                id="reading"
+                name="interests"
+                value="reading"
+              />
+              <label for="reading">Reading</label><br />
+              <input
+                type="checkbox"
+                id="traveling"
+                name="interests"
+                value="traveling"
+              />
+              <label for="traveling">Traveling</label><br />
+              <input
+                type="checkbox"
+                id="coding"
+                name="interests"
+                value="coding"
+              />
+              <label for="coding">Coding</label>
+            </p>
+
+            <p>
+              <label for="usercountry">Country:</label><br />
+              <select id="usercountry" name="usercountry">
+                <optgroup label="North America">
+                  <option value="us">United States</option>
+                  <option value="ca">Canada</option>
+                  <option value="mx">Mexico</option>
+                </optgroup>
+                <optgroup label="Europe">
+                  <option value="uk">United Kingdom</option>
+                  <option value="fr">France</option>
+                  <option value="de">Germany</option>
+                </optgroup>
+              </select>
+            </p>
+
+            <p>
+              <label for="usercomments">Comments:</label><br />
+              <textarea
+                id="usercomments"
+                name="usercomments"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </p>
+
+            <p>
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="semantic">
+        <h2>Semantic Elements</h2>
+
+        <article>
+          <h3>Article Example</h3>
+          <p>This is an independent, self-contained content piece.</p>
+        </article>
+
+        <aside>
+          <h3>Aside Example</h3>
+          <p>
+            This is supplementary content that could be considered separate from
+            the main content.
+          </p>
+        </aside>
+
+        <figure>
+          <img src="data:," alt="Example image" />
+          <figcaption>This is a figure caption</figcaption>
+        </figure>
+
+        <details>
+          <summary>Click to show more information</summary>
+          <p>This is hidden content that can be expanded.</p>
+        </details>
+      </section>
+
+      <section id="media">
+        <h2>Media Elements</h2>
+
+        <h3>Images</h3>
+        <img src="./assets/image-01.jpeg" alt="Example image" />
+        <picture>
+          <source media="(min-width: 800px)" srcset="./assets/image-03.jpeg" />
+          <source media="(min-width: 400px)" srcset="./assets/image-02.jpeg" />
+          <img src="./assets/image-01.jpeg" alt="Responsive image example" />
+        </picture>
+
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="./assets/Audio-01.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video</h3>
+        <video controls width="320" height="240">
+          <source src="./assets/video-01.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created for learning pure HTML elements</p>
+      <address>
+        Written by <a href="mailto:example@example.com">Example Author</a><br />
+        Visit us at: Example.com<br />
+        Box 564, Disneyland<br />
+        USA
+      </address>
+    </footer>
+  </body>
+</html>
