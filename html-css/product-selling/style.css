@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-text-color: #1c3950;
+  --secondary-text-color: #113f67;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+.sb-txt {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+}
+
+.top-row {
+  background-color: #a2a8d3;
+}
+
+.top-txt {
+  color: #113f67;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 110px;
+}
+
+.nav-li {
+  flex-basis: 730px;
+}
+
+.nav-li ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+.hover-li {
+  color: var(--primary-text-color);
+  transition: 0.2s ease-out;
+}
+
+.hover-li:hover {
+  color: var(--accent-color);
+}
+
+.pri-button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 700px;
+  color: whitesmoke;
+  padding: 12px 24px;
+  box-shadow: 0 0 20px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+
+.pri-button:hover {
+  animation: text-blink 1.5s infinite; /* Apply the blinking animation */
+}
+
+@keyframes text-blink {
+  0%,
+  100% {
+    color: whitesmoke; /* Text visible */
+  }
+  50% {
+    color: transparent; /* Text invisible */
+  }
+}
+
+.sec-button {
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: 700px;
+  padding: 12px 24px;
+  color: #183b56;
+  box-shadow: 0 0 20px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+
+.sec-button:hover {
+  animation: text-blink-black 1s infinite; /* Apply the blinking animation */
+}
+
+@keyframes text-blink-black {
+  0%,
+  100% {
+    color: #183b56; /* Text visible */
+  }
+  50% {
+    color: transparent; /* Text invisible */
+  }
+}
+
+.right img {
+  width: 550px;
+}
+
+.button1 {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 700px;
+  color: whitesmoke;
+  padding: 12px 24px;
+  margin-top: 20px;
+}
+
+header {
+  padding: 50px var(--padding-inline-section);
+}
+
+.header-sec {
+  justify-content: center;
+  gap: 25px;
+}
+
+.left {
+  max-width: 40vw;
+}
+
+.left h1 {
+  margin-top: 20px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 30px 0;
+  background-color: white;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+
+  animation: 10s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+.companies-header {
+  text-align: center;
+  margin-block: 30px;
+  color: var(--primary-text-color);
+}
