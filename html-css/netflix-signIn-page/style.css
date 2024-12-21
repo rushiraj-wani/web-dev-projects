@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(./assets/images/bg-main.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 80vh;
+  position: relative;
+}
+
+.main .box {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.75;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 78vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 99px;
+}
+
+nav img {
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  font-weight: 600;
+}
+
+button {
+  position: relative;
+  z-index: 10;
+  background-color: rgb(226, 32, 32);
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.start-btn {
+  height: 50px;
+  width: 200px;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+select {
+  position: relative;
+  z-index: 10;
+  padding: 0 18px;
+  background-color: rgba(24, 23, 23, 0.866);
+  color: white;
+  height: 30px;
+  margin: 0px 12px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.text {
+  font-family: "Poppins", serif;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+  width: 50vw;
+  margin: auto;
+}
+
+.text > :nth-child(1) {
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+}
+
+.text > :nth-child(2) {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.text > :nth-child(3) {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.hr {
+  height: 5px;
+  background-color: rgb(69, 64, 64);
+}
+
+.main input {
+  height: 50px;
+  width: 400px;
+  border: 1px solid grey;
+  padding: 2px 14px;
+  border-radius: 3px;
+  margin: 0px 15px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 17px;
+}
+
+::placeholder {
+  color: rgb(220, 208, 208);
+  font-size: 15px;
+}
+
+.top-rgt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
