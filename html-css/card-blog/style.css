@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 75vw;
+  padding: 32px 16px;
+  margin: 0px auto;
+}
+
+/* navbar */
+
+header {
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: rgba(155, 116, 223, 0.815);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 20px;
+  opacity: 0.76;
+  color: rgb(41, 36, 36);
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  font-family: "Work Sans", serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+/* main */
+main {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* card */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(107, 105, 105);
+  border-radius: 6px;
+}
+
+.card:hover .card-img {
+  transform: scale(1.1);
+  transition-duration: 2s;
+}
+
+.card-anchor {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-img {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.card-title h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 5px;
+  color: rgb(25, 23, 23);
+}
+
+.card-title h3:hover {
+  color: rgb(67, 67, 191);
+}
+
+.card-title p {
+  font-size: 16px;
+  opacity: 0.76;
+  color: rgb(41, 36, 36);
+}
+
+/* footer */
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.auth-img {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(145, 135, 135);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.auth-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.auth-info span h4,
+.auth-info span h6 {
+  margin: 0;
+}
+
+.niche {
+  font-size: 0.79rem;
+  border: 1px solid rgb(76, 71, 71);
+  border-radius: 4px;
+  line-height: 1.3rem;
+  padding: 0.25rem 0.5rem;
+  color: grey;
+  margin-left: auto;
+}
